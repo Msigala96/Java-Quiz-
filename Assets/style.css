@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: 1px solid red;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+	background-color:dimgrey;
+	
+}
+
+p {
+	color: white;
+	font-size: 1.3em;
+}
+
+button {
+	outline: none;
+	background-color: black;
+	color: aliceblue;
+	font-size: 1.3em;
+}
+/*Outer container Div */
+.outer-container {
+	padding: 10px;
+	height: 100vh;
+}
+/*top display Div*/
+.top-display p {
+	float: right;
+}
+
+/*Inner container Div*/
+.inner-container {
+background-color: black;
+height: 100%;
+}
+/*Quiz intro Header*/
+
+/*Quiz content Main*/
