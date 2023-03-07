@@ -12,16 +12,46 @@
         <!--top display for time interval and Leaderboard -->
         <div class="top-display">
             <button>Leaderboard</button>
-            <p>Timer: 00:00
-            </p>
+            <p id="timer">Timer: </p>
         </div>
         <div class="inner-container">
             <!--Intro to Quiz with start button-->
-            <header class="quiz-intro">
+            <header class="quiz-intro" id="quiz-intro">
+                <h1>Welcome to the Java Quiz</h1>
+                <p>Hit the Start button to start the quiz!</p>
+                <button id="startButton">Start!</button>
 
             </header>
+
             <!--Quiz Content-->
             <main>
+                <section id="question-screen" class="hide">
+                    <h2>Question here</h2>
+                    <ul>
+                        <li><button>Answer 1</button></li>
+                        <li><button>Answer 2</button></li>
+                        <li><button>Answer 3</button></li>
+                        <li><button>Answer 4</button></li>
+                    </ul>
+                </section>
+                <!-- -->
+                <section id="quiz-finish-screen" class="hide">
+                    <h2>Finished!</h2>
+                    <p>Your score 00</p>
+                    <div>
+                   <label for="">Enter Initials:</label>
+                   <input type="text">
+                   <button>Submit</button>
+                </div>
+                </section>
+
+                <section id="Leaderboards-screen" class="hide">
+                    <h2>Quiz Scores!</h2>
+                    <ol>
+                        <li></li>
+                    </ol>
+                    <button>Start Over</button>
+                </section>
 
             </main>
         </div>
