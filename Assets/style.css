@@ -70,14 +70,14 @@ justify-content: center;
 	margin: auto;
 }
 /*Quiz content Main element*/
-main {
+.hide {
 	display: none;
 }
 
-/*Question screen*/
+/*Question screen
 #question-screen {
-	display: block;
-}
+	/*display: block;
+}*/
 
 
 /*Quiz finish screen*/

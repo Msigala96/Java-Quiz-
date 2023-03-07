@@ -50,9 +50,10 @@ const questionContainer = document.getElementById('question-screen')
 
 // Starts the quiz and hides the header ID
 const startTimer = () => {
-  document.getElementById('quiz-intro').style.display = 'none'; // hide start button when pressed
+  document.getElementById('quiz-intro').style.display = 'none'; 
   timerInterval = setInterval(() => {
     seconds--;
+    //displays a times up message when 
     if (seconds < 0) {
       clearInterval(timerInterval);
       document.getElementById('timer').innerText = 'Time\'s up!';
@@ -63,16 +64,15 @@ const startTimer = () => {
   }, 1000);
 };
 
-const formatTime = (hours, minutes, seconds) => {
+const formatTime = (_hours, minutes, seconds) => {
   const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
   const formattedSeconds = seconds < 10 ? `0${seconds}` : seconds;
   return `${formattedMinutes}:${formattedSeconds}`;
 };
 
+
+
 document.getElementById('startButton').addEventListener('click', startTimer);
- 
-// Display the Quiz content
-const startGame = () => {
-  questionContainer.classList.remove('hide')
-}
+// Display the Quiz content one question at a time, when a question is answered incorrectly, the timer will lose 10 seconds.
+
 //Ends the quiz, gives the leaderboard stats, and gives an option to start over.
