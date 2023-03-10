@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Java Quiz!</title>
     <link rel="stylesheet" href="./Assets/style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="outer-container">
         <!--top display for time interval and Leaderboard -->
         <div class="top-display">
@@ -26,16 +28,19 @@
             <!--Quiz Content-->
             <main>
                 <section id="question-screen" class="hide">
+                    <ul id="question-options">
+                        
+                    </ul>
                 </section>
                 <!-- -->
                 <section id="quiz-finish-screen" class="hide">
                     <h2>Finished!</h2>
                     <p>Your score 00</p>
                     <div>
-                   <label for="">Enter Initials:</label>
-                   <input type="text">
-                   <button>Submit</button>
-                </div>
+                        <label for="">Enter Initials:</label>
+                        <input type="text">
+                        <button>Submit</button>
+                    </div>
                 </section>
 
                 <section id="Leaderboards-screen" class="hide">
@@ -48,8 +53,9 @@
 
             </main>
         </div>
-    </div>   
+    </div>
 </body>
-        
-    <script src="./Assets/script.js"></script>
+
+<script src="./Assets/script.js"></script>
+
 </html>

@@ -1,14 +1,14 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	
+
 	font-family: 'Courier New', Courier, monospace;
 	color: aliceblue;
 }
 
-body{
-	background-color:dimgrey;
+body {
+	background-color: dimgrey;
 }
 
 p {
@@ -18,15 +18,31 @@ p {
 
 button {
 	outline: none;
-	background-color: rgb(156, 152, 152);
+	background-color: rgb(208, 57, 188);
 	color: aliceblue;
 	font-size: 1.3em;
+	border-radius: 15%;
 }
+button:hover {
+	background-color: #ddd;
+  }
+  
+  button.correct {
+	background-color: #4CAF50;
+	color: #fff;
+  }
+  
+  button.incorrect {
+	background-color: #f44336;
+	color: #fff;
+  }
 
-h1, h2 {
-	color:rgb(148, 148, 148);
+h1,
+h2 {
+	color: rgb(148, 148, 148);
 	text-align: center;
 }
+
 li {
 	list-style: none;
 }
@@ -39,6 +55,7 @@ li {
 	flex-direction: column;
 	justify-content: start;
 }
+
 /*top display Div*/
 .top-display p {
 	float: right;
@@ -47,28 +64,35 @@ li {
 /*Inner container Div*/
 .inner-container {
 	background: rgba(0, 0, 0, 0.5);
-height: 100%;
-width: 50%;
-margin: 0 auto;
-display: flex;
-flex-direction: column;
-justify-content: center;
+	height: 100%;
+	width: 50%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
+
 /*Quiz intro Header*/
-.quiz-intro, main {
+.quiz-intro,
+main {
 	display: block;
+	border: 1px black;
 	margin-bottom: 30vh;
+	margin-top: 30vh;
 	margin-left: 10%;
 	margin-right: 10%;
 	background-color: rgb(60, 38, 204);
 }
+
 .quiz-intro p {
 	text-align: center;
 }
+
 .quiz-intro button {
 	display: block;
 	margin: auto;
 }
+
 /*Quiz content Main element*/
 .hide {
 	display: none;
@@ -82,7 +106,7 @@ justify-content: center;
 
 /*Quiz finish screen*/
 #quiz-finish-screen {
-display: none;
+	display: none;
 }
 
 /*Leaderboard section*/
@@ -90,7 +114,8 @@ display: none;
 	display: block;
 }
 
-#leaderboards-screen, ol {
+#leaderboards-screen,
+ol {
 	overflow-y: scroll;
 	max-height: 200px;
 }
